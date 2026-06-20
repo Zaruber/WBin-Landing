@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — WBin</title>
+<meta name="description" content="Политика конфиденциальности расширения WBin: какие анонимные данные собираются и как они используются.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#161616; --bg-2:#1e1e1e; --card:#222222; --card-hover:#2a2a2a;
+  --brand:#A057F6; --brand-2:#7C3AED; --brand-soft:rgba(160,87,246,.12);
+  --text:#E8E8E8; --muted:#9A9A9A; --dim:#5f5f5f;
+  --border:#2e2e2e; --border-2:#3a3a3a; --green:#4CAF50;
+  --font:'Montserrat',sans-serif; --mono:'JetBrains Mono',monospace;
+  --radius:14px; --max:820px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(22,22,22,.78);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1120px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;letter-spacing:-.5px;color:var(--text)}
+.logo:hover{text-decoration:none}
+.logo img{width:26px;height:26px}
+.back{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:.9rem;font-weight:500}
+.back:hover{color:var(--text);text-decoration:none}
+
+/* Doc */
+.doc{padding:64px 0 90px}
+.doc .kicker{font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--brand)}
+.doc h1{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:800;letter-spacing:-1px;margin:10px 0 8px}
+.doc .upd{font-family:var(--mono);font-size:.85rem;color:var(--dim);margin-bottom:30px}
+.doc .lead{font-size:1.05rem;color:var(--text);background:var(--card);border:1px solid var(--border);border-left:3px solid var(--brand);border-radius:12px;padding:20px 22px;margin-bottom:40px}
+.doc h2{font-size:1.35rem;font-weight:700;letter-spacing:-.4px;margin:38px 0 16px}
+.doc p{color:var(--muted);margin-bottom:14px}
+.doc ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin:6px 0 8px}
+.doc li{position:relative;padding-left:26px;color:var(--text)}
+.doc li::before{content:"";position:absolute;left:6px;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.doc ul.no li::before{background:var(--red,#FF5A5A)}
+.doc .card{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius);padding:24px 26px;margin:8px 0 12px}
+
+footer{border-top:1px solid var(--border);padding:36px 0;text-align:center;color:var(--dim);font-size:.82rem}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <img src="image/LogoVectorWhite.svg" alt="WBin">
+      <span>WBin</span>
+    </a>
+    <a href="index.html" class="back">← На главную</a>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <div class="kicker">Расширение WBin</div>
+    <h1>Политика конфиденциальности</h1>
+    <div class="upd">Дата обновления: 13 июня 2026 года</div>
+
+    <p class="lead">WBin использует анонимную статистику использования, чтобы понимать, какие функции расширения востребованы, находить ошибки и улучшать интерфейс.</p>
+
+    <h2>Какие данные собираются</h2>
+    <div class="card">
+      <ul>
+        <li>факт открытия всплывающего меню расширения;</li>
+        <li>нажатия на разделы WBin;</li>
+        <li>успешный или ошибочный запуск функции;</li>
+        <li>изменение порядка разделов в меню;</li>
+        <li>установка или обновление расширения;</li>
+        <li>версия расширения;</li>
+        <li>случайный анонимный идентификатор установки и технический идентификатор сессии.</li>
+      </ul>
+    </div>
+
+    <h2>Какие данные не собираются</h2>
+    <p>WBin не передаёт в систему аналитики:</p>
+    <div class="card">
+      <ul class="no">
+        <li>имя, email, номер телефона и другие контактные данные;</li>
+        <li>идентификаторы аккаунтов Wildberries или Ozon;</li>
+        <li>адреса посещённых страниц;</li>
+        <li>артикулы, цены, финансовые отчёты и показатели кабинета продавца;</li>
+        <li>содержимое страниц;</li>
+        <li>cookies, пароли, токены и заголовки авторизации.</li>
+      </ul>
+    </div>
+
+    <h2>Обработка данных</h2>
+    <p>Анонимные события передаются по защищённому HTTPS-соединению в Google Analytics 4. Данные используются только для анализа работы и улучшения WBin и не продаются третьим лицам.</p>
+    <p>Пользователь может в любой момент отключить отправку статистики кнопкой «Статистика: вкл/выкл» в нижней части меню расширения.</p>
+
+    <h2>Контакты</h2>
+    <p>По вопросам конфиденциальности можно обратиться в <a href="https://t.me/+3g9fjC4OTn03MWYx" target="_blank" rel="noopener">Telegram-сообщество WBin</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 WBin · <a href="index.html">На главную</a></div>
+</footer>
+
+</body>
+</html>
